@@ -1,0 +1,1 @@
+A dummy restaurant page created with JavaScript using webpack.
