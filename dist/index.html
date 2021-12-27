@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,82 +9,135 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="main.js"></script>
     <div id="content"></div>
-    <div class="wrapper">
-        <nav class="nav">
+    <div class="wrapper-upper">
+        <img class="background-image" src="../src/images/ramen-background.jpg" alt="tasty ramen">
+        <div class="wrapper">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Shōyu-Ramen</a></li>
+                    <li><a href="#">Shio-Ramen</a></li>
+                    <li><a href="#">Miso-Ramen</a></li>
+                    <li><a href="#">Appetizers</a></li>
+                    <li><a href="#">Drinks</a></li>
+                    <li class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="social">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="social">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="head-section">
+            <h1>Yamato Ramen</h1>
+            <h3>Yummy ラーメン!</h3>
+            <p>Autentic japanese style Ramen for every taste.
+                <ul>
+                    <li>Shōyu-Ramen</li>
+                    <li>Shio-Ramen</li>
+                    <li>Miso-Ramen</li>
+                </ul>
+                Try them all and discover your favorite!</p>
+        </div>
+        <div class="gallery">
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" src="../src/images/ramen4.jpg">
+                        <img src="../src/images/ramen4.jpg" alt="Ramen" width="600" height="400">
+                    </a>
+                    <div class="desc">Ramen</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="../src/images/ramen2.jpg">
+                        <img src="../src/images/ramen2.jpg" alt="More Ramen" width="600" height="400">
+                    </a>
+                    <div class="desc">More Ramen</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="../src/images/ramen3.jpg">
+                        <img src="../src/images/ramen3.jpg" alt="Even more Ramen" width="600" height="400">
+                    </a>
+                    <div class="desc">Even more Ramen</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="gallery">
+                    <a target="_blank" href="../src/images/ramen4.jpg">
+                        <img src="../src/images/ramen4.jpg" alt="Another bowl of Ramen" width="600" height="400">
+                    </a>
+                    <div class="desc">Another bowl of Ramen</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <h3>About Yamato Ramen</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, reprehenderit architecto totam
+                magnam
+                veritatis voluptatibus adipisci illum provident quo impedit ex dolore dolorem, tenetur hic, et
+                cupiditate
+                quisquam libero neque unde. Nostrum quo saepe, accusantium quidem ab ratione odit eos nesciunt dolor
+                ipsum,
+                earum consequatur iste ex tenetur voluptatem dolorum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, animi.</p>
+        </div>
+    </div>
+    <div class="wrapper-middle">
+        <div class="hours">
+            <h3>Opening hours:</h3>
             <ul>
-                <li><a href="#">Shōyu-Ramen</a></li>
-                <li><a href="#">Shio-Ramen</a></li>
-                <li><a href="#">Miso-Ramen</a></li>
-                <li><a href="#">Appetizers</a></li>
-                <li><a href="#">Drinks</a></li>
-                <li class="social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li class="social">
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                  </li>
+                <li>Monday (closed)</li>
+                <li>Tuesday: 11:00 - 22:00</li>
+                <li>Wednesday 11:00 - 22:00</li>
+                <li>Thursday 11:00 - 22:00</li>
+                <li>Friday 11:00 - 22:00</li>
+                <li>Saturday 11:00 - 22:00</li>
+                <li>Sunday 11:00 - 22:00</li>
             </ul>
-        </nav>
+        </div>
+        <div class="reservations">
+            <h3>Table reservations</h3>
+            <input type="datetime-local" id="Test_DatetimeLocal">
+        </div>
     </div>
-    <div class="head-section">
-        <h1>Yamato Ramen</h1>
-        <h3>Yummy ラーメン!</h3>
-        <p>Autentic japanese style Ramen for every taste.
-            <ul>
-                <li>Shōyu-Ramen</li>
-                <li>Shio-Ramen</li>
-                <li>Miso-Ramen</li>
-            </ul>
-        Try them all and discover your favorite!</p>
-    </div>
-    <div class="image">
-        <img src="../src/images/ramen1.jpg" alt="tasty ramen">
-    </div>
-    <div class="about">
-        <h3>About Yamato Ramen</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, reprehenderit architecto totam magnam veritatis voluptatibus adipisci illum provident quo impedit ex dolore dolorem, tenetur hic, et cupiditate quisquam libero neque unde. Nostrum quo saepe, accusantium quidem ab ratione odit eos nesciunt dolor ipsum, earum consequatur iste ex tenetur voluptatem dolorum.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, animi.</p>
-    </div>
-    <div class="hours">
-        <h3>Opening hours:</h3>
-        <ul>
-            <li>Monday (closed)</li>
-            <li>Tuesday: 11:00 - 22:00</li>
-            <li>Wednesday 11:00 - 22:00</li>
-            <li>Thursday 11:00 - 22:00</li>
-            <li>Friday 11:00 - 22:00</li>
-            <li>Saturday 11:00 - 22:00</li>
-            <li>Sunday 11:00 - 22:00</li>            
-        </ul>
-    </div>
-    <div class="reservations">
-        <h3>Table reservations</h3>
-        <input type="datetime-local" id="Test_DatetimeLocal">
-    </div>
-    <div class="status">
-        <h3>Current status:</h3>
-        <div id="current-status">Not so busy</div>
-    </div>
-    <div class="contact">
-        <h2>Contact us:</h2>
-        <textarea id="contact-form" class="input-textarea" name="contact-form" placeholder="Enter your message here..."> </textarea>
-    </div>
-    <div class="contact">
-        <button id="submit" class="submit-button" type="submit">Send message</button>
-    </div>
-    <div class="contact">
-        <h4>Mail: đ<a href="mailto:yamato@nood.le">yamato@nood.le</a></h4>
-        <h4>Phone: +49 1234 / 56789</h4>
+    <div class="wrapper-lower">
+        <div class="status">
+            <h3>Current status:</h3>
+            <div id="current-status">Not so busy</div>
+        </div>
+        <div class="contact-wrapper">
+            <div class="contact">
+                <h2>Contact us:</h2>
+                <textarea id="contact-form" class="input-textarea" name="contact-form"
+                    placeholder="Enter your message here..."> </textarea>
+            </div>
+            <div class="contact">
+                <button id="submit" class="submit-button" type="submit">Send message</button>
+            </div>
+            <div class="contact">
+                <h4>Mail: <a href="mailto:yamato@nood.le">yamato@nood.le</a></h4>
+                <h4>Phone: +49 1234 / 56789</h4>
+            </div>
+        </div>
     </div>
     <footer>
         <p>Copyright (c) erynder-Z.<br> All Rights Reserved.</p>
         <a href="#" rel="noopener noreferrer">Imprint</a>
     </footer>
 </body>
+
 </html>
