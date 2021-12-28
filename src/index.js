@@ -1,1 +1,10 @@
-console.log("Hello Santa!");
+
+import { createBackground } from "./modules/home";
+
+const initialize = (() => {
+    const content = document.getElementById("content");
+    content.appendChild(createBackground());
+})();
+
+
+
