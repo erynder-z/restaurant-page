@@ -2,7 +2,8 @@ import {
     createBackground,
     createWrapperUpper,
     createNavWrap,
-    createNav
+    createNav,
+    createHead
 } from "./modules/home";
 
 const initialize = (() => {
@@ -11,5 +12,6 @@ const initialize = (() => {
     const wrapperU = content.appendChild(createWrapperUpper());
     const navWrap = wrapperU.appendChild(createNavWrap());
     navWrap.appendChild(createNav());
+    content.appendChild(createHead());
 
 })();
