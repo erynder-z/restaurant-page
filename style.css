@@ -16,7 +16,7 @@ body {
 .wrapper-upper {
     display: flex;
     flex-direction: column;
-    height: auto;
+    min-height: 15vh;
 }
 
 .background-image {
@@ -104,6 +104,10 @@ body {
     list-style: none;
 }
 
+.head-section {
+    min-height: 75vh;
+}
+
 .head-section,
 .about,
 .hours {
@@ -173,6 +177,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-height: 5vh;
 }
 
 
