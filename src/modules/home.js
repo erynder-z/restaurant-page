@@ -117,11 +117,26 @@ const createHead = () => {
     return head
 }
 
+const createFooter = () => {
+    const footer = document.createElement("footer");
+    const p = document.createElement("p");
+    p.innerText = "Copyright (c) erynder-Z.\r\n All Rights Reserved."
+    footer.appendChild(p);
+    const a = document.createElement("a");
+    a.href = "#";
+    a.rel = "noopener noreferrer";
+    a.innerText = "Imprint";
+    footer.appendChild(a);
+
+    return footer
+}
+
 
 export {
     createBackground,
     createWrapperUpper,
     createNavWrap,
     createNav,
-    createHead
+    createHead,
+    createFooter
 }

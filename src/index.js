@@ -3,7 +3,8 @@ import {
     createWrapperUpper,
     createNavWrap,
     createNav,
-    createHead
+    createHead,
+    createFooter
 } from "./modules/home";
 
 const initialize = (() => {
@@ -13,5 +14,6 @@ const initialize = (() => {
     const navWrap = wrapperU.appendChild(createNavWrap());
     navWrap.appendChild(createNav());
     content.appendChild(createHead());
+    content.appendChild(createFooter());
 
 })();
