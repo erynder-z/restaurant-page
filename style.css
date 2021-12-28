@@ -96,6 +96,10 @@ body {
     font-size: 40px;
 }
 
+.head-section ul {
+    list-style: none;
+}
+
 .head-section,
 .about,
 .hours {
@@ -104,8 +108,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0 25px;
-    text-align: justify;
-
+    text-align: center;
 }
 
 .wrapper-middle,
