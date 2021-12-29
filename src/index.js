@@ -3,9 +3,12 @@ import {
     createWrapperUpper,
     createNavWrap,
     createNav,
-    createHead,
     createFooter
-} from "./modules/home";
+} from "./modules/ui"
+
+import {
+    createHead,
+} from "./modules/home"
 
 import {
     createMenu
@@ -27,6 +30,10 @@ const menuButton = () => {
     const menuBtn = document.getElementById("menu");
     menuBtn.addEventListener("click", () => {
         clearContents();
+        content.appendChild(createBackground());
+        const wrapperU = content.appendChild(createWrapperUpper());
+        const navWrap = wrapperU.appendChild(createNavWrap());
+        navWrap.appendChild(createNav());
         content.appendChild(createMenu());
     });
 }
