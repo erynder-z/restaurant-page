@@ -26,6 +26,18 @@ body {
     opacity: 0.2;
     left: 50%;
     transform: translateX(-50%);
+}
+
+#logo {
+    width: 25%;
+    height: auto;
+}
+
+@media all and (max-width:500px) {
+
+    #logo {
+        width: 50%;
+    }
 
 }
 
