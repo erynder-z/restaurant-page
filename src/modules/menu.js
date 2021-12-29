@@ -1,3 +1,8 @@
+import Image1 from "../images/ramen4.jpg";
+import Image2 from "../images/ramen2.jpg";
+import Image3 from "../images/ramen3.jpg";
+import Image4 from "../images/ramen6.jpg";
+
 const createMenu = () => {
 
     const menu = document.createElement("div");
@@ -17,10 +22,10 @@ const createMenu = () => {
     responsive1.appendChild(item1);
     const a1 = document.createElement("a");
     a1.target = "_blank";
-    a1.href = "../src/images/ramen4.jpg";
+    a1.href = Image1;
     item1.appendChild(a1);
     const img1 = document.createElement("img");
-    img1.src = "../src/images/ramen4.jpg";
+    img1.src = Image1;
     img1.alt = "Ramen";
     a1.appendChild(img1);
     const desc1 = document.createElement("div");
@@ -35,10 +40,10 @@ const createMenu = () => {
     responsive2.appendChild(item2);
     const a2 = document.createElement("a");
     a2.target = "_blank";
-    a2.href = "../src/images/ramen2.jpg";
+    a2.href = Image2;
     item2.appendChild(a2);
     const img2 = document.createElement("img");
-    img2.src = "../src/images/ramen2.jpg";
+    img2.src = Image2;
     img2.alt = "Ramen";
     a2.appendChild(img2);
     const desc2 = document.createElement("div");
@@ -53,10 +58,10 @@ const createMenu = () => {
     responsive3.appendChild(item3);
     const a3 = document.createElement("a");
     a3.target = "_blank";
-    a3.href = "../src/images/ramen3.jpg";
+    a3.href = Image3;
     item3.appendChild(a3);
     const img3 = document.createElement("img");
-    img3.src = "../src/images/ramen3.jpg";
+    img3.src = Image3;
     img3.alt = "Ramen";
     a3.appendChild(img3);
     const desc3 = document.createElement("div");
@@ -71,10 +76,10 @@ const createMenu = () => {
     responsive4.appendChild(item4);
     const a4 = document.createElement("a");
     a4.target = "_blank";
-    a4.href = "../src/images/ramen6.jpg";
+    a4.href = Image4;
     item4.appendChild(a4);
     const img4 = document.createElement("img");
-    img4.src = "../src/images/ramen6.jpg";
+    img4.src = Image4;
     img4.alt = "Ramen";
     a4.appendChild(img4);
     const desc4 = document.createElement("div");

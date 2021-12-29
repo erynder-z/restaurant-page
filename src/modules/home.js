@@ -1,3 +1,5 @@
+import Logo from "../images/ramen-logo.png";
+
 const createHead = () => {
     const head = document.createElement("div");
     head.classList.add("head-section");
@@ -11,7 +13,7 @@ const createHead = () => {
     head.appendChild(h3);
 
     const image = document.createElement("img");
-    image.src = "../src/images/ramen-logo.png";
+    image.src = Logo;
     image.id = "logo";
     head.appendChild(image);
 
