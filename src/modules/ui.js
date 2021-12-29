@@ -1,7 +1,9 @@
+import Background from "../images/ramen-background.jpg";
+
 const createBackground = () => {
     const image = document.createElement("img");
     image.classList.add("background-image")
-    image.src = "../src/images/ramen-background.jpg";
+    image.src = Background;
     image.alt = "tasty ramen";
     return image
 }
