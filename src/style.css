@@ -28,6 +28,12 @@ body {
     transform: translateX(-50%);
 }
 
+@-moz-document url-prefix() {
+    .background-image {
+      width: 110rem;
+    }
+  }
+
 #logo {
     width: 25%;
     height: auto;
