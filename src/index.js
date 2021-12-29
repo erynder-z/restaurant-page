@@ -58,6 +58,7 @@ const menuButton = () => {
         const navWrap = wrapperU.appendChild(createNavWrap());
         navWrap.appendChild(createNav());
         content.appendChild(createMenu());
+        content.appendChild(createFooter());
         homeButton();
         menuButton();
         contactButton();
@@ -76,6 +77,7 @@ const contactButton = () => {
         content.appendChild(createReservations());
         content.appendChild(createStatus());
         content.appendChild(createContacts());
+        content.appendChild(createFooter());
         homeButton();
         menuButton();
         contactButton();

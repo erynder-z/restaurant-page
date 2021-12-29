@@ -1,12 +1,19 @@
 const createMenu = () => {
-    const menu = document.createElement("div");
-    menu.classList.add("gallery");
 
+    const menu = document.createElement("div");
+    menu.classList.add("menu");
+
+    const heading = document.createElement("h1");
+    heading.innerText = "Menu";
+    menu.appendChild(heading);
+
+    const gallery = document.createElement("div");
+    gallery.classList.add("gallery");
+    menu.appendChild(gallery)
     const responsive1 = document.createElement("div");
     responsive1.classList.add("responsive");
-    menu.appendChild(responsive1);
+    gallery.appendChild(responsive1);
     const item1 = document.createElement("div");
-    item1.classList.add("gallery");
     responsive1.appendChild(item1);
     const a1 = document.createElement("a");
     a1.target = "_blank";
@@ -23,9 +30,8 @@ const createMenu = () => {
 
     const responsive2 = document.createElement("div");
     responsive2.classList.add("responsive");
-    menu.appendChild(responsive2);
+    gallery.appendChild(responsive2);
     const item2 = document.createElement("div");
-    item2.classList.add("gallery");
     responsive2.appendChild(item2);
     const a2 = document.createElement("a");
     a2.target = "_blank";
@@ -42,9 +48,8 @@ const createMenu = () => {
 
     const responsive3 = document.createElement("div");
     responsive3.classList.add("responsive");
-    menu.appendChild(responsive3);
+    gallery.appendChild(responsive3);
     const item3 = document.createElement("div");
-    item3.classList.add("gallery");
     responsive3.appendChild(item3);
     const a3 = document.createElement("a");
     a3.target = "_blank";
@@ -61,16 +66,15 @@ const createMenu = () => {
 
     const responsive4 = document.createElement("div");
     responsive4.classList.add("responsive");
-    menu.appendChild(responsive4);
+    gallery.appendChild(responsive4);
     const item4 = document.createElement("div");
-    item4.classList.add("gallery");
     responsive4.appendChild(item4);
     const a4 = document.createElement("a");
     a4.target = "_blank";
-    a4.href = "../src/images/ramen4.jpg";
+    a4.href = "../src/images/ramen6.jpg";
     item4.appendChild(a4);
     const img4 = document.createElement("img");
-    img4.src = "../src/images/ramen4.jpg";
+    img4.src = "../src/images/ramen6.jpg";
     img4.alt = "Ramen";
     a4.appendChild(img4);
     const desc4 = document.createElement("div");
