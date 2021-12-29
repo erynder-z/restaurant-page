@@ -23,9 +23,6 @@ const initialize = (() => {
 
 })();
 
-menuButton();
-
-
 const menuButton = () => {
     const menuBtn = document.getElementById("menu");
     menuBtn.addEventListener("click", () => {
@@ -37,3 +34,5 @@ const menuButton = () => {
 function clearContents() {
     content.innerHTML = "";
 }
+
+menuButton();
