@@ -86,12 +86,12 @@ const createNav = () => {
 const createFooter = () => {
     const footer = document.createElement("footer");
     const p = document.createElement("p");
-    p.innerText = "Copyright (c) erynder-Z.\r\n All Rights Reserved."
+    p.innerText = "Erynder-Z 2021"
     footer.appendChild(p);
     const a = document.createElement("a");
-    a.href = "#";
+    a.href = "https://github.com/erynder-z";
     a.rel = "noopener noreferrer";
-    a.innerText = "Imprint";
+    a.innerText = "My GitHub";
     footer.appendChild(a);
 
     return footer
