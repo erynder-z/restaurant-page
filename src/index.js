@@ -14,6 +14,13 @@ import {
     createMenu
 } from "./modules/menu"
 
+import {
+    createHours,
+    createReservations,
+    createStatus,
+    createContacts
+} from "./modules/contact"
+
 const content = document.getElementById("content");
 
 const initialize = (() => {
@@ -37,7 +44,8 @@ const homeButton = () => {
         content.appendChild(createHead());
         content.appendChild(createFooter());
         homeButton();
-        menuButton()
+        menuButton();
+        contactButton();
     });
 }
 
@@ -51,7 +59,26 @@ const menuButton = () => {
         navWrap.appendChild(createNav());
         content.appendChild(createMenu());
         homeButton();
-        menuButton()
+        menuButton();
+        contactButton();
+    });
+}
+
+const contactButton = () => {
+    const contactBtn = document.getElementById("contact");
+    contactBtn.addEventListener("click", () => {
+        clearContents();
+        content.appendChild(createBackground());
+        const wrapperU = content.appendChild(createWrapperUpper());
+        const navWrap = wrapperU.appendChild(createNavWrap());
+        navWrap.appendChild(createNav());
+        content.appendChild(createHours());
+        content.appendChild(createReservations());
+        content.appendChild(createStatus());
+        content.appendChild(createContacts());
+        homeButton();
+        menuButton();
+        contactButton();
     });
 }
 
@@ -61,3 +88,4 @@ function clearContents() {
 
 homeButton();
 menuButton();
+contactButton();
