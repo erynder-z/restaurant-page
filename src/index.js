@@ -7,8 +7,13 @@ import {
     createFooter
 } from "./modules/home";
 
+import {
+    createMenu
+} from "./modules/menu"
+
+const content = document.getElementById("content");
+
 const initialize = (() => {
-    const content = document.getElementById("content");
     content.appendChild(createBackground());
     const wrapperU = content.appendChild(createWrapperUpper());
     const navWrap = wrapperU.appendChild(createNavWrap());
@@ -17,3 +22,18 @@ const initialize = (() => {
     content.appendChild(createFooter());
 
 })();
+
+menuButton();
+
+
+const menuButton = () => {
+    const menuBtn = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+        clearContents();
+        content.appendChild(createMenu());
+    });
+}
+
+function clearContents() {
+    content.innerHTML = "";
+}

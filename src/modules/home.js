@@ -31,14 +31,16 @@ const createNav = () => {
     const li1A = document.createElement("a");
     li1.appendChild(li1A);
     li1A.href = "#";
-    li1A.innerText = "Menu";
+    li1A.innerText = "Home";
+    li1A.id = "home";
 
     const li2 = document.createElement("li");
     navUl.appendChild(li2);
     const li2A = document.createElement("a");
     li2.appendChild(li2A);
     li2A.href = "#";
-    li2A.innerText = "Reservations";
+    li2A.innerText = "Menu";
+    li2A.id ="menu";
 
     const li3 = document.createElement("li");
     navUl.appendChild(li3);
@@ -46,6 +48,7 @@ const createNav = () => {
     li3.appendChild(li3A);
     li3A.href = "#";
     li3A.innerText = "Contact";
+    li3A.id = "contact";
 
     const so1 = document.createElement("li");
     so1.classList.add("social");
