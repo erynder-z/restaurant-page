@@ -10,6 +10,11 @@ const createHead = () => {
     h3.innerText = "Yummy ラーメン";
     head.appendChild(h3);
 
+    const image = document.createElement("img");
+    image.src = "../src/images/ramen-logo.png";
+    image.id = "logo";
+    head.appendChild(image);
+
     const p1 = document.createElement("p");
     p1.innerText = "Autentic japanese style Ramen for every taste.";
 
