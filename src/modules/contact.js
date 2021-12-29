@@ -37,7 +37,7 @@ const createReservations = () => {
     const reservations = document.createElement("div");
     reservations.classList.add("reservations");
     const heading1 = document.createElement("h3");
-    heading1.innerText = "Tabvle reservations";
+    heading1.innerText = "Table reservations";
     reservations.appendChild(heading1);
     const input = document.createElement("input");
     input.type = "datetime-local";
