@@ -15,77 +15,50 @@ const createMenu = () => {
     const gallery = document.createElement("div");
     gallery.classList.add("gallery");
     menu.appendChild(gallery)
-    const responsive1 = document.createElement("div");
-    responsive1.classList.add("responsive");
-    gallery.appendChild(responsive1);
-    const item1 = document.createElement("div");
-    responsive1.appendChild(item1);
-    const a1 = document.createElement("a");
-    a1.target = "_blank";
-    a1.href = Image1;
-    item1.appendChild(a1);
-    const img1 = document.createElement("img");
-    img1.src = Image1;
-    img1.alt = "Ramen";
-    a1.appendChild(img1);
-    const desc1 = document.createElement("div");
-    desc1.classList.add("desc");
-    desc1.innerText = "Ramen\r\n 9,50€";
-    item1.appendChild(desc1);
 
-    const responsive2 = document.createElement("div");
-    responsive2.classList.add("responsive");
-    gallery.appendChild(responsive2);
-    const item2 = document.createElement("div");
-    responsive2.appendChild(item2);
-    const a2 = document.createElement("a");
-    a2.target = "_blank";
-    a2.href = Image2;
-    item2.appendChild(a2);
-    const img2 = document.createElement("img");
-    img2.src = Image2;
-    img2.alt = "Ramen";
-    a2.appendChild(img2);
-    const desc2 = document.createElement("div");
-    desc2.classList.add("desc");
-    desc2.innerText = "Ramen\r\n 10,50€";
-    item2.appendChild(desc2);
+    const MenuItemFactory = (responsiveFrameId, item, link, linkHref, image, imageSource, imageAlt, description, descriptionText) => {
+        let saveID = responsiveFrameId;
+        responsiveFrameId = document.createElement("div");
+        responsiveFrameId.id = saveID;
+        responsiveFrameId.classList.add("responsive");
+        gallery.appendChild(responsiveFrameId);
 
-    const responsive3 = document.createElement("div");
-    responsive3.classList.add("responsive");
-    gallery.appendChild(responsive3);
-    const item3 = document.createElement("div");
-    responsive3.appendChild(item3);
-    const a3 = document.createElement("a");
-    a3.target = "_blank";
-    a3.href = Image3;
-    item3.appendChild(a3);
-    const img3 = document.createElement("img");
-    img3.src = Image3;
-    img3.alt = "Ramen";
-    a3.appendChild(img3);
-    const desc3 = document.createElement("div");
-    desc3.classList.add("desc");
-    desc3.innerText = "Ramen\r\n 11,00€";
-    item3.appendChild(desc3);
+        item = document.createElement("div");
+        responsiveFrameId.appendChild(item);
 
-    const responsive4 = document.createElement("div");
-    responsive4.classList.add("responsive");
-    gallery.appendChild(responsive4);
-    const item4 = document.createElement("div");
-    responsive4.appendChild(item4);
-    const a4 = document.createElement("a");
-    a4.target = "_blank";
-    a4.href = Image4;
-    item4.appendChild(a4);
-    const img4 = document.createElement("img");
-    img4.src = Image4;
-    img4.alt = "Ramen";
-    a4.appendChild(img4);
-    const desc4 = document.createElement("div");
-    desc4.classList.add("desc");
-    desc4.innerText = "Ramen\r\n 12,50€";
-    item4.appendChild(desc4);
+        link = document.createElement("a");
+        link.target = "_blank";
+        link.href = linkHref;
+        item.appendChild(link);
+
+        image = document.createElement("img");
+        image.src = imageSource;
+        image.alt = imageAlt;
+        link.appendChild(image);
+
+        description = document.createElement("div");
+        description.classList.add("desc");
+        description.innerText = descriptionText;
+        item.appendChild(description);
+
+        return {
+            responsiveFrameId,
+            item,
+            link,
+            image,
+            description,
+        }
+    }
+
+    const ramen1 = MenuItemFactory("id1", "item", "link", Image1, "img", Image1, "Ramen", "desc", "Ramen\r\n 9,50€");
+    const ramen2 = MenuItemFactory("id2", "item", "link", Image2, "img", Image2, "Ramen", "desc", "Ramen\r\n 10,50€");
+    const ramen3 = MenuItemFactory("id3", "item", "link", Image3, "img", Image3, "Ramen", "desc", "Ramen\r\n 11,00€");
+    const ramen4 = MenuItemFactory("id4", "item", "link", Image4, "img", Image4, "Ramen", "desc", "Ramen\r\n 12,50€");
+    const ramen5 = MenuItemFactory("id5", "item", "link", Image1, "img", Image1, "Ramen", "desc", "Ramen\r\n 9,50€");
+    const ramen6 = MenuItemFactory("id6", "item", "link", Image2, "img", Image2, "Ramen", "desc", "Ramen\r\n 10,50€");
+    const ramen7 = MenuItemFactory("id7", "item", "link", Image3, "img", Image3, "Ramen", "desc", "Ramen\r\n 11,00€");
+    const ramen8 = MenuItemFactory("id8", "item", "link", Image4, "img", Image4, "Ramen", "desc", "Ramen\r\n 12,50€");
+    const ramen9 = MenuItemFactory("id9", "item", "link", Image1, "img", Image1, "Ramen", "desc", "Ramen\r\n 9,50€");
 
     return menu
 }
