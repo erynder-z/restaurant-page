@@ -35,7 +35,7 @@ const initialize = (() => {
     content.appendChild(createFooter());
 
     const homeTab = document.getElementById("home");
-    homeTab.parentElement.style.background = "orange";
+    homeTab.parentElement.style.background = "#ec4d4d";
 
 })();
 
@@ -54,7 +54,7 @@ const homeButton = () => {
         contactButton();
 
         const homeTab = document.getElementById("home");
-        homeTab.parentElement.style.background = "orange";
+        homeTab.parentElement.style.background = "#ec4d4d";
     });
 }
 
@@ -73,7 +73,7 @@ const menuButton = () => {
         contactButton();
 
         const menuTab = document.getElementById("menu");
-        menuTab.parentElement.style.background = "orange";
+        menuTab.parentElement.style.background = "#ec4d4d";
     });
 }
 
@@ -95,7 +95,7 @@ const contactButton = () => {
         contactButton();
 
         const contactTab = document.getElementById("contact");
-        contactTab.parentElement.style.background = "orange";
+        contactTab.parentElement.style.background = "#ec4d4d";
     });
 }
 
