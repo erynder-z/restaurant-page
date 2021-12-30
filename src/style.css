@@ -66,13 +66,18 @@ body {
 }
 
 .nav li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 3;
+    height: 5vh;
 }
 
 .nav li a {
     text-decoration: none;
     color: rgb(46, 46, 46);
-    font-weight: bold;
+
+
 }
 
 .flex-nav .social {
@@ -81,6 +86,10 @@ body {
 
 
 @media all and (max-width:1000px) {
+
+    .nav-wrapper {
+        padding: 25px 75px;
+    }
 
     .nav ul {
         flex-wrap: wrap;

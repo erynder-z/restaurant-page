@@ -34,6 +34,9 @@ const initialize = (() => {
     content.appendChild(createHead());
     content.appendChild(createFooter());
 
+    const homeTab = document.getElementById("home");
+    homeTab.parentElement.style.background = "orange";
+
 })();
 
 const homeButton = () => {
@@ -49,6 +52,9 @@ const homeButton = () => {
         homeButton();
         menuButton();
         contactButton();
+
+        const homeTab = document.getElementById("home");
+        homeTab.parentElement.style.background = "orange";
     });
 }
 
@@ -65,6 +71,9 @@ const menuButton = () => {
         homeButton();
         menuButton();
         contactButton();
+
+        const menuTab = document.getElementById("menu");
+        menuTab.parentElement.style.background = "orange";
     });
 }
 
@@ -84,6 +93,9 @@ const contactButton = () => {
         homeButton();
         menuButton();
         contactButton();
+
+        const contactTab = document.getElementById("contact");
+        contactTab.parentElement.style.background = "orange";
     });
 }
 
