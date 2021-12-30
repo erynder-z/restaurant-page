@@ -28,59 +28,50 @@ const createNav = () => {
     const navUl = document.createElement("ul");
     nav.appendChild(navUl);
 
-    const li1 = document.createElement("li");
-    navUl.appendChild(li1);
-    const li1A = document.createElement("a");
-    li1.appendChild(li1A);
-    li1A.href = "#";
-    li1A.innerText = "Home";
-    li1A.id = "home";
+    const navListItemFactory = (item, link, linkHref, linkInnerText, linkID) => {
+        let saveId = linkID;
+        item = document.createElement("li");
+        navUl.appendChild(item);
 
-    const li2 = document.createElement("li");
-    navUl.appendChild(li2);
-    const li2A = document.createElement("a");
-    li2.appendChild(li2A);
-    li2A.href = "#";
-    li2A.innerText = "Menu";
-    li2A.id ="menu";
+        link = document.createElement("a");
+        link.href = linkHref;
+        link.innerText = linkInnerText;
+        link.id = saveId;
+        item.appendChild(link);
 
-    const li3 = document.createElement("li");
-    navUl.appendChild(li3);
-    const li3A = document.createElement("a");
-    li3.appendChild(li3A);
-    li3A.href = "#";
-    li3A.innerText = "Contact";
-    li3A.id = "contact";
+        return {
+            item,
+            link
+        }
+    }
 
-    const so1 = document.createElement("li");
-    so1.classList.add("social");
-    navUl.appendChild(so1);
-    const so1A = document.createElement("a");
-    so1.appendChild(so1A);
-    so1A.href = "#";
-    const icon1 = document.createElement("i");
-    icon1.classList.add("fa", "fa-facebook");
-    so1A.appendChild(icon1);
+    const item1 = navListItemFactory("item", "link", "#", "Home", "home");
+    const item2 = navListItemFactory("item", "link", "#", "Menu", "menu");
+    const item3 = navListItemFactory("item", "link", "#", "Contact", "contact");
 
-    const so2 = document.createElement("li");
-    so2.classList.add("social");
-    navUl.appendChild(so2);
-    const so2A = document.createElement("a");
-    so2.appendChild(so2A);
-    so2A.href = "#";
-    const icon2 = document.createElement("i");
-    icon2.classList.add("fa", "fa-twitter");
-    so2A.appendChild(icon2);
+    const navSocialItemfactory = (item, link, linkHref, icon, iconClass1, iconClass2) => {
+        item = document.createElement("li");
+        navUl.appendChild(item);
 
-    const so3 = document.createElement("li");
-    so3.classList.add("social");
-    navUl.appendChild(so3);
-    const so3A = document.createElement("a");
-    so3.appendChild(so3A);
-    so3A.href = "#";
-    const icon3 = document.createElement("i");
-    icon3.classList.add("fa", "fa-instagram");
-    so3A.appendChild(icon3);
+        link = document.createElement("a");
+        link.href = linkHref;
+        item.appendChild(link);
+
+        icon = document.createElement("i");
+        icon.classList.add(iconClass1);
+        icon.classList.add(iconClass2);
+        link.appendChild(icon);
+
+        return {
+            item,
+            link,
+            icon,
+        }
+    }
+
+    const social1 = navSocialItemfactory("item", "link", "#", "icon", "fa", "fa-facebook");
+    const social2 = navSocialItemfactory("item", "link", "#", "icon", "fa", "fa-twitter");
+    const social3 = navSocialItemfactory("item", "link", "#", "icon", "fa", "fa-instagram");
 
     return nav
 }
